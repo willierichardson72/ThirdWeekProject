@@ -1,9 +1,25 @@
 h1 {
-  font-size: 30px;
-  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  font-family: 'Orbitron', sans-serif;
+  color: green;
 }
 
 header p {
   font-size: 50px;
-
+  color: green;
 }
+
+img {
+  width: 200px
+  height; 200px
+}
+
+.photo1 {
+  border: 30px solid;
+}
+.photo2 {
+  border: 30px solid;
+}
+body {
+  background-image: url('Img/MilkyWay.jpg');
+  }

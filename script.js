@@ -19,10 +19,17 @@ function StarWarsPhoto (name, path) {
 
 }
 
+// function GetRandomPhotos () {
+//   return Math.floor(Math.random() * starWarsPhotos.length)
+// }
+
 function PhotoSelector () {
 
-  choiceOne=starWarsPhotos[Math.floor(Math.random() * starWarsPhotos.length)]
-  choiceTwo=starWarsPhotos[Math.floor(Math.random() * starWarsPhotos.length)]
+  choiceOne=starWarsPhotos[Math.floor(Math.random() * starWarsPhotos.length)];
+  choiceTwo=starWarsPhotos[Math.floor(Math.random() * starWarsPhotos.length)];
+  while (choiceOne===choiceTwo) {
+    choiceTwo=starWarsPhotos[Math.floor(Math.random() * starWarsPhotos.length)]
+   }
   chooseOne.src=choiceOne.path;
   chooseTwo.src=choiceTwo.path;
 }
