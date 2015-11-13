@@ -1,3 +1,40 @@
+/*.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}*/
+
+/* We tell all items to be 100% width */
+/*.header, .main, .aside1, .aside2 .footer {
+  flex: 1 100%;
+}*/
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. nav
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
+
+/**/
+/* Large screens */
+/*@media all and (min-width: 800px) {
+   We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars
+
+  .main { flex: 2 0px; }
+
+  .aside1 { order: 1; }
+  .main    { order: 2; }
+  .aside2 { order: 3; }
+  .footer  {order:  4; }
+}*/
+
+body {
+  background-image: url('Img/MilkyWay.jpg');
+}
+
 h1 {
   font-size: 50px;
   font-family: 'Orbitron', sans-serif;
@@ -9,17 +46,10 @@ header p {
   color: green;
 }
 
-img {
-  width: 200px
-  height; 200px
-}
-
 .photo1 {
   border: 30px solid;
 }
 .photo2 {
   border: 30px solid;
 }
-body {
-  background-image: url('Img/MilkyWay.jpg');
-  }
+
