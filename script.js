@@ -7,7 +7,6 @@ var response=document.getElementById('response');
 var canvas=document.getElementById('myChart').getContext('2d');
 var theChart;
 
-
 function StarWarsPhoto (name, path) {
   this.name=name;
   this.path=path;
@@ -16,9 +15,7 @@ function StarWarsPhoto (name, path) {
   this.color='#9CBABA'
   this.highlight='#D18133'
   starWarsPhotos.push(this);
-
 }
-
 
 function PhotoSelector () {
 
@@ -31,10 +28,6 @@ function PhotoSelector () {
   chooseTwo.src=choiceTwo.path;
 }
 
-// function checkLocal () {
-//   if (localStorage.UpdateChart && localStorage)
-// }
-
 function Voteone () {
   console.log('Jar Jar Binks is a Jedi');
   response.innerHTML='Jar Jar Binks is a Jedi!';
@@ -43,7 +36,6 @@ function Voteone () {
   PhotoSelector();
   localStorage.setItem('starWarsPhotos', JSON.stringify(starWarsPhotos));
   PhotoSelector();
-  // localStorage.setItem('theChart', JSON.stringify(theChart));
 }
 
 function Votetwo () {
@@ -54,7 +46,6 @@ function Votetwo () {
   PhotoSelector();
   localStorage.setItem('starWarsPhotos', JSON.stringify(starWarsPhotos));
   PhotoSelector();
-  // local
 }
 
 function UpdateChart () {
@@ -79,7 +70,6 @@ var jabba=new StarWarsPhoto('Jabba','Img/jabba.png');
 var lando=new StarWarsPhoto('Lando Calrissian','Img/lando.jpg');
 var maul=new StarWarsPhoto('Darth Maul', 'Img/maul.jpg');
 
-// localStorage.setItem('starWarsPhotos', JSON.stringify(starWarsPhotos));
 function CheckLocal () {
   if (localstorage.starWarsPhotos) {
     starWarsPhotos=JSON.parse(localstorage.starWarsPhotos)
@@ -97,7 +87,6 @@ function CheckLocal () {
   var lando=new StarWarsPhoto('Lando Calrissian','Img/lando.jpg');
   var maul=new StarWarsPhoto('Darth Maul', 'Img/maul.jpg'); }
 }
-
 
 PhotoSelector();
 console.log(choiceOne);
